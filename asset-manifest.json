@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2a13af99.chunk.css",
-    "main.js": "/portfolio/static/js/main.a8bc0539.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a8bc0539.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.1186d2fe.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.1186d2fe.js.map",
-    "static/js/2.fb6fec92.chunk.js": "/portfolio/static/js/2.fb6fec92.chunk.js",
-    "static/js/2.fb6fec92.chunk.js.map": "/portfolio/static/js/2.fb6fec92.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/main.2a13af99.chunk.css.map": "/portfolio/static/css/main.2a13af99.chunk.css.map",
-    "static/js/2.fb6fec92.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fb6fec92.chunk.js.LICENSE.txt",
-    "static/media/3dPrintingExample.873fc7fe.JPG": "/portfolio/static/media/3dPrintingExample.873fc7fe.JPG",
-    "static/media/portfolioLanding.cd5473b8.mp4": "/portfolio/static/media/portfolioLanding.cd5473b8.mp4",
-    "static/media/techStack.99a2ba18.JPG": "/portfolio/static/media/techStack.99a2ba18.JPG",
-    "static/media/undraw_programer.ec1e37c7.png": "/portfolio/static/media/undraw_programer.ec1e37c7.png",
-    "static/media/undraw_surfer.9ec87cfd.png": "/portfolio/static/media/undraw_surfer.9ec87cfd.png"
+    "main.css": "/static/css/main.2a13af99.chunk.css",
+    "main.js": "/static/js/main.a8bc0539.chunk.js",
+    "main.js.map": "/static/js/main.a8bc0539.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6f318dea.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6f318dea.js.map",
+    "static/js/2.2616e4eb.chunk.js": "/static/js/2.2616e4eb.chunk.js",
+    "static/js/2.2616e4eb.chunk.js.map": "/static/js/2.2616e4eb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2a13af99.chunk.css.map": "/static/css/main.2a13af99.chunk.css.map",
+    "static/js/2.2616e4eb.chunk.js.LICENSE.txt": "/static/js/2.2616e4eb.chunk.js.LICENSE.txt",
+    "static/media/3dPrintingExample.873fc7fe.JPG": "/static/media/3dPrintingExample.873fc7fe.JPG",
+    "static/media/portfolioLanding.cd5473b8.mp4": "/static/media/portfolioLanding.cd5473b8.mp4",
+    "static/media/techStack.99a2ba18.JPG": "/static/media/techStack.99a2ba18.JPG",
+    "static/media/undraw_programer.ec1e37c7.png": "/static/media/undraw_programer.ec1e37c7.png",
+    "static/media/undraw_surfer.9ec87cfd.png": "/static/media/undraw_surfer.9ec87cfd.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1186d2fe.js",
-    "static/js/2.fb6fec92.chunk.js",
+    "static/js/runtime-main.6f318dea.js",
+    "static/js/2.2616e4eb.chunk.js",
     "static/css/main.2a13af99.chunk.css",
     "static/js/main.a8bc0539.chunk.js"
   ]
