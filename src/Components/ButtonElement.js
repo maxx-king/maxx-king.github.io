@@ -5,11 +5,11 @@ export const Button = styled(Link)`
     border-radius: 50px;
     background: white;
     white-space: nowrap;
-    padding: 12px 24px;
+    padding: 4px 24px;
     display: flex;
     justify-content: space-around;
 
-    color: #0056C6;
+    color: #D4AF37;
     font-size: 1.5rem;
     font-weight: 900;
 
@@ -18,5 +18,9 @@ export const Button = styled(Link)`
         transform: scale(1.07);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 700px) {
+        display: none;
     }
 `;

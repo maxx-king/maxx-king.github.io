@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-    background: #7d8183;   
+    background: #404040;   
     width: 100%; 
 `;
 
@@ -38,7 +38,7 @@ export const TextCol = styled.div`
 `;
 
 export const InfoH1 = styled.h1`
-    color: #0056C6;
+    color: #D4AF37;
     text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
     font-size: 2.5rem;
 

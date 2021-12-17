@@ -8,12 +8,12 @@ const ContactSection = () => {
     }
     
     return (
-        <div className="Contact" style={{padding: '75px 0', backgroundColor: '#0056C6',  }}>
+        <div className="Contact" style={{padding: '75px 0', backgroundColor: '#404040',  }}>
             <div style={{display: 'flex', justifyContent: 'center' }}>
                 <form onSubmit={sendEmail}>
-                    <div class="form-group">
+                    <div class="col-8 pt-3 mx-auto" >
 
-                        <input type="text" class="form-control" id="name" placeholder="Your Name"  style={{fontSize: '1.2rem', fontFamily: 'lucida grande', display: 'flex', justifyContent: 'center'}}/>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name"  style={{fontSize: '1.2rem', fontFamily: 'lucida grande'}}/>
 
                     </div>
                     <div class="form-group">
