@@ -8,7 +8,7 @@ const ContactSection = () => {
     }
     
     return (
-        <div className="Contact" style={{padding: '75px 0', backgroundColor: '#404040',  }}>
+        <div className="Contact" style={{padding: '75px 0', background: 'linear-gradient(0deg, black, #404040)'  }}>
             <div style={{display: 'flex', justifyContent: 'center' }}>
                 <form onSubmit={sendEmail}>
                     <div class="col-8 pt-3 mx-auto" >

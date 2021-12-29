@@ -9,7 +9,7 @@ export const Content = styled.div`
     z-index: 1; 
     max-width: 1290px;
 
-    padding: 100px 24px; 
+    padding: 50px 24px; 
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -22,6 +22,10 @@ export const Content = styled.div`
     @media screen and (max-width: 1000px) {
         grid-template-areas: 'textCol' 'imgCol';
     }
+
+    @media screen and (max-width: 700px) {
+        padding: 24px 24px;
+    }
 `;
 
 export const TextCol = styled.div`
@@ -31,15 +35,11 @@ export const TextCol = styled.div`
 
     @media screen and (max-width: 700px) {
         transform: scale(0.7);
-        &:hover {
-            transform: scale(0.74);
-        }
     }
 `;
 
 export const InfoH1 = styled.h1`
     color: #D4AF37;
-    text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
     font-size: 2.5rem;
 
     @media screen and (max-width: 1000px) {
@@ -50,8 +50,8 @@ export const InfoH1 = styled.h1`
 
 export const InfoP = styled.p`
     color: white;
-    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
     font-size: 1.5rem;
+    padding-bottom: 10px;
 
     
 `;

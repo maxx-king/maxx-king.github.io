@@ -10,7 +10,7 @@ export const Button = styled(Link)`
     justify-content: space-around;
 
     color: #D4AF37;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
 
     transition: all 0.2s ease-in-out;
@@ -20,7 +20,5 @@ export const Button = styled(Link)`
         cursor: pointer;
     }
 
-    @media screen and (max-width: 700px) {
-        display: none;
-    }
+    
 `;

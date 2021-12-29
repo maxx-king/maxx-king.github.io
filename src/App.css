@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 * {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Varela Round', sans-serif;
   margin: 0;
+}
+
+html {
+  background-color: black;
 }

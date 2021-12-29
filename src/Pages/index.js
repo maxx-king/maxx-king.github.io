@@ -1,6 +1,7 @@
 import React from 'react'
-import LandingSection from '../Components/LandingSection'
-import img1 from '../Images/MK_Logo.png'
+
+import HeroSection from '../Components/HeroSection'
+import TechStack from '../Components/TechStack'
 import InfoSection from '../Components/InfoSection'
 import { AboutMe, Project1, Project2, Project3, Project4 } from '../Components/InfoSection/data'
 import ContactSection from '../Components/ContactSection'
@@ -10,13 +11,13 @@ import ContactSection from '../Components/ContactSection'
 const Home = () => {
     return (
         <div>
-            <LandingSection />
-            <InfoSection {...AboutMe}/>
-
+            <HeroSection />
+            <InfoSection {...AboutMe} />
+            <TechStack />
             <h1 id='Portfolio' style={{display: 'flex', 
                         justifyContent: 'center',
                         color: '#D4AF37',
-                        background: 'black' }}>
+                        background: 'black'     }}>
                         Projects
             </h1>
             <InfoSection {...Project1}/>
@@ -28,7 +29,7 @@ const Home = () => {
                         justifyContent: 'center',
                         color: '#D4AF37',
                         background: 'black' }}>
-                        Contact Me
+                        Contact Me!
             </h1>
             <ContactSection />
         </div>
