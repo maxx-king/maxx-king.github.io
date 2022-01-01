@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.d9ca0a93.chunk.css",
-    "main.js": "/static/js/main.2c4fb1ec.chunk.js",
-    "main.js.map": "/static/js/main.2c4fb1ec.chunk.js.map",
+    "main.js": "/static/js/main.3702678a.chunk.js",
+    "main.js.map": "/static/js/main.3702678a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6f318dea.js",
     "runtime-main.js.map": "/static/js/runtime-main.6f318dea.js.map",
     "static/js/2.914573ca.chunk.js": "/static/js/2.914573ca.chunk.js",
@@ -11,16 +11,16 @@
     "static/css/main.d9ca0a93.chunk.css.map": "/static/css/main.d9ca0a93.chunk.css.map",
     "static/js/2.914573ca.chunk.js.LICENSE.txt": "/static/js/2.914573ca.chunk.js.LICENSE.txt",
     "static/media/3dPrintingExample.873fc7fe.JPG": "/static/media/3dPrintingExample.873fc7fe.JPG",
-    "static/media/MK_Logo.06f23c01.png": "/static/media/MK_Logo.06f23c01.png",
+    "static/media/MK_Logo.32628a0e.png": "/static/media/MK_Logo.32628a0e.png",
     "static/media/headshotSmall.3bf091a2.jpg": "/static/media/headshotSmall.3bf091a2.jpg",
+    "static/media/ichthys_logo.5e4f7f9c.jpg": "/static/media/ichthys_logo.5e4f7f9c.jpg",
     "static/media/techStack.99a2ba18.JPG": "/static/media/techStack.99a2ba18.JPG",
-    "static/media/undraw_programer.ec1e37c7.png": "/static/media/undraw_programer.ec1e37c7.png",
-    "static/media/undraw_surfer.9ec87cfd.png": "/static/media/undraw_surfer.9ec87cfd.png"
+    "static/media/undraw_programer.ec1e37c7.png": "/static/media/undraw_programer.ec1e37c7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6f318dea.js",
     "static/js/2.914573ca.chunk.js",
     "static/css/main.d9ca0a93.chunk.css",
-    "static/js/main.2c4fb1ec.chunk.js"
+    "static/js/main.3702678a.chunk.js"
   ]
 }
