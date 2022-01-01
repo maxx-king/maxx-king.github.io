@@ -58,13 +58,15 @@ export const InfoP = styled.p`
 
 export const ImgCol = styled.div`
     margin-top: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: fit-content;
+    padding: 10px 25px;
 
     grid-area: imgCol;
     background: white;
     border-radius: 10px;
-    padding: 5px;
 
     transition: all 0.2s ease-in-out;
     &:hover {
@@ -83,7 +85,7 @@ export const ImgCol = styled.div`
 
 export const Img = styled.img`
     background-image: url(${({img}) => (img)});
-    height: auto;
+    height: 100%;
     width: auto;
     
     display: block;
