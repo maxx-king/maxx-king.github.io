@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.d9ca0a93.chunk.css",
-    "main.js": "/static/js/main.3702678a.chunk.js",
-    "main.js.map": "/static/js/main.3702678a.chunk.js.map",
+    "main.js": "/static/js/main.41e17ec5.chunk.js",
+    "main.js.map": "/static/js/main.41e17ec5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6f318dea.js",
     "runtime-main.js.map": "/static/js/runtime-main.6f318dea.js.map",
     "static/js/2.914573ca.chunk.js": "/static/js/2.914573ca.chunk.js",
@@ -13,7 +13,7 @@
     "static/media/3dPrintingExample.873fc7fe.JPG": "/static/media/3dPrintingExample.873fc7fe.JPG",
     "static/media/MK_Logo.32628a0e.png": "/static/media/MK_Logo.32628a0e.png",
     "static/media/headshotSmall.3bf091a2.jpg": "/static/media/headshotSmall.3bf091a2.jpg",
-    "static/media/ichthys_logo.5e4f7f9c.jpg": "/static/media/ichthys_logo.5e4f7f9c.jpg",
+    "static/media/ichthys_logo.3cc2b74f.jpg": "/static/media/ichthys_logo.3cc2b74f.jpg",
     "static/media/techStack.99a2ba18.JPG": "/static/media/techStack.99a2ba18.JPG",
     "static/media/undraw_programer.ec1e37c7.png": "/static/media/undraw_programer.ec1e37c7.png"
   },
@@ -21,6 +21,6 @@
     "static/js/runtime-main.6f318dea.js",
     "static/js/2.914573ca.chunk.js",
     "static/css/main.d9ca0a93.chunk.css",
-    "static/js/main.3702678a.chunk.js"
+    "static/js/main.41e17ec5.chunk.js"
   ]
 }
