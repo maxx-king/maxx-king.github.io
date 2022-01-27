@@ -10,7 +10,7 @@ export const AboutMe = {
     heading: 'About Me',
     subtitle: 'Hello! My name is Maxx King, I am a junior full-stack developer graduated from San Diego State University in December 2021. I am currently seeking full-time employment; please use the contact form at the bottom of the page to get in touch!',
     subtitle2: 'I am a motivated, passionate individual who loves challenge. I do best in projects where I can fully immerse myself in the task at hand. I am currently researching additive manufacturing technologies, composite materials engineering, and artificial intelligence.',
-    borderR: '15%',
+    borderR: '0%',
 }
 
 export const Project1 = {
