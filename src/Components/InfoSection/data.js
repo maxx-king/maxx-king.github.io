@@ -42,7 +42,7 @@ export const Project3 = {
 
 export const Project4 = {
     id: 'PrettyColors',
-    img: img4,
+    img: img2,
     imgStart: false,
     heading: 'Pretty Colors ',
     subtitle: 'Python utility to facilitate web design. Tool takes two images and creates a color gradient of equal width by any specified height. Similar to the CSS linear-gradient function, but creates a vertical color gradient for every pixel in the width.',
