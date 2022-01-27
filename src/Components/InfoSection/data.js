@@ -48,3 +48,39 @@ export const Project4 = {
     subtitle: 'Python utility to facilitate web design. Tool takes two images and creates a color gradient of equal width by any specified height. Similar to the CSS linear-gradient function, but creates a vertical color gradient for every pixel in the width.',
     //subtitle2: 'Click the image to learn more!'
 }
+
+export const ThreeDInfo1 = {
+    id: 'PrettyColors',
+    img: img2,
+    imgStart: false,
+    heading: 'Pretty Colors ',
+    subtitle: 'Python utility to facilitate web design. Tool takes two images and creates a color gradient of equal width by any specified height. Similar to the CSS linear-gradient function, but creates a vertical color gradient for every pixel in the width.',
+    //subtitle2: 'Click the image to learn more!'
+}
+
+export const ThreeDInfo2 = {
+    id: 'PrettyColors',
+    img: img2,
+    imgStart: true,
+    heading: 'Pretty Colors ',
+    subtitle: 'Python utility to facilitate web design. Tool takes two images and creates a color gradient of equal width by any specified height. Similar to the CSS linear-gradient function, but creates a vertical color gradient for every pixel in the width.',
+    //subtitle2: 'Click the image to learn more!'
+}
+
+export const ThreeDInfo3 = {
+    id: 'PrettyColors',
+    img: img2,
+    imgStart: false,
+    heading: 'Pretty Colors ',
+    subtitle: 'Python utility to facilitate web design. Tool takes two images and creates a color gradient of equal width by any specified height. Similar to the CSS linear-gradient function, but creates a vertical color gradient for every pixel in the width.',
+    //subtitle2: 'Click the image to learn more!'
+}
+
+export const ThreeDInfo4 = {
+    id: 'PrettyColors',
+    img: img2,
+    imgStart: true,
+    heading: 'Pretty Colors ',
+    subtitle: 'Python utility to facilitate web design. Tool takes two images and creates a color gradient of equal width by any specified height. Similar to the CSS linear-gradient function, but creates a vertical color gradient for every pixel in the width.',
+    //subtitle2: 'Click the image to learn more!'
+}

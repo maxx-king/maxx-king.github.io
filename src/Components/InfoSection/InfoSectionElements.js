@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link as LinkR} from 'react-router-dom'
 
 export const InfoContainer = styled.div`
     background: #404040;   
@@ -91,4 +92,9 @@ export const Img = styled.img`
     display: block;
     margin-left: auto;
     margin-right: auto;
+`;
+
+export const NavLinkRoute = styled(LinkR)`
+    height: 100%;
+    width: 100%;
 `;

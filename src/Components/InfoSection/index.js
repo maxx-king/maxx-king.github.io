@@ -1,7 +1,7 @@
 import React from 'react'
 import alt from '../../Images/techStack.JPG'
-import { InfoContainer, Content, TextCol, InfoH1, InfoP, ImgCol, Img 
-            } from './InfoSectionElements'
+import { InfoContainer, Content, TextCol, InfoH1, InfoP, ImgCol, Img, 
+         NavLinkRoute   } from './InfoSectionElements'
 
 const InfoSection = ({heading, subtitle, subtitle2, id, imgStart, img, borderR}) => {
     return (
@@ -14,7 +14,9 @@ const InfoSection = ({heading, subtitle, subtitle2, id, imgStart, img, borderR})
                 </TextCol>
 
                 <ImgCol>
-                    <Img src={img} alt={alt} style={{borderRadius: borderR}}/>
+                    <NavLinkRoute to="/3dPrinting" >
+                        <Img src={img} alt={alt} style={{borderRadius: borderR}}/>
+                    </NavLinkRoute>
                 </ImgCol>
 
             </Content>
