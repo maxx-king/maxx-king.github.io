@@ -1,9 +1,9 @@
 import React from 'react'
 import alt from '../../Images/techStack.JPG'
-import { InfoContainer, Content, TextCol, InfoH1, InfoP, ImgCol, Img, 
-         NavLinkRoute   } from './InfoSectionElements'
+import { InfoContainer, Content, TextCol, InfoH1, InfoP, ImgCol, Img } from './InfoSectionElements'
+import {Link} from 'react-router-dom'
 
-const InfoSection = ({heading, subtitle, subtitle2, id, imgStart, img, borderR}) => {
+const InfoSection = ({heading, subtitle, subtitle2, id, imgStart, img, borderR, pathX}) => {
     return (
         <InfoContainer id={id}>
             <Content imgStart={imgStart}>
@@ -14,9 +14,9 @@ const InfoSection = ({heading, subtitle, subtitle2, id, imgStart, img, borderR})
                 </TextCol>
 
                 <ImgCol>
-                    <NavLinkRoute to="/3dPrinting" >
+                    <Link to={pathX} >
                         <Img src={img} alt={alt} style={{borderRadius: borderR}}/>
-                    </NavLinkRoute>
+                    </Link>
                 </ImgCol>
 
             </Content>

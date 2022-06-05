@@ -4,6 +4,8 @@ export const HeroContainer = styled.div`
     display: grid;
     grid-template-rows: 90% 10%;
     background: linear-gradient(180deg, black, #404040);
+    backdrop-filter: blur(10px);
+
                 
     height: 100vh;
     max-height: 1080px;
