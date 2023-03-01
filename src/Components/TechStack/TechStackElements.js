@@ -14,7 +14,8 @@ export const Wrapper = styled.div`
 export const Row = styled.div`
     background: #F0F0F0;
     border-radius: 50px;
-    width: 100%;
+    width: 40vw;
+    margin: 0 10px;
     display: grid;
     grid-auto-columns: auto;
     grid-template-areas: 'icon name exp';

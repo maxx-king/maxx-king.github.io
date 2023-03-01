@@ -8,8 +8,8 @@ export const AboutMe = {
     img: img1,
     imgStart: false,
     heading: 'About Me',
-    subtitle: 'Hello! My name is Maxx King, I am a junior full-stack developer graduated from San Diego State University in December 2021.',
-    subtitle2: 'I am a motivated, passionate individual who loves challenge. I do best in projects where I can fully immerse myself in the task at hand. I am currently researching additive manufacturing technologies, composite materials engineering, and artificial intelligence.',
+    subtitle: "Hi! I'm Maxx King, I build full stack web applications. I graduated from San Diego State University in December 2021 with a Bachelors of Science degree in Computer Science.",
+    subtitle2: "My strengths are most reflected in partnering with teams to develop clear, scalable solutions; and through clear communication with other team members. I have a passion for learning new technologies and working with diverse teams to create user-friendly applications",
     borderR: '15%',
     pathX: "/3dPrinting"
 }
