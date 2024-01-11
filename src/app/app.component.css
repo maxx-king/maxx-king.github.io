@@ -1,0 +1,196 @@
+#rendererContainer {
+    display: flex;
+    max-width: 1920px;
+	margin: auto;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.column {
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+section {
+    display: flex;
+    padding: 2% 0%;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.image-gallery > li {
+    flex-basis: 200px;
+    position: relative;
+    list-style-type: none;
+    background-color: white;
+    border-radius: 25px;
+    @media (max-width:800px) {flex-basis: 100px}
+}
+  
+.image-gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 25px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: 0.502;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.1s 0.1s ease-in-out;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+    font-size: 3rem;
+    border-radius: 50%;
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-gallery li:hover .overlay {
+    transform: scale(1);
+}
+
+/* https://github.com/kaisermann/comicbubbles/blob/master/README.md */
+.cbbl {
+	position: relative;
+	display: inline-block;
+	margin: 10px 9px 29px 6px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.5rem;
+  @media (max-width:800px) {font-size: .75rem;}
+	background-color: #fff;
+	color: #000;
+	padding: 5px;
+	box-shadow: 0 -3px #fff, 0 -6px #000, 3px 0 #fff, 3px -3px #000, 6px 0 #000, 0 3px #fff, 0 6px #000, -3px 0 #fff, -3px 3px #000, -6px 0 #000, -3px -3px #000, 3px 3px #000, 3px 9px #aaa, 6px 6px #aaa, 9px 3px #aaa;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
+  }
+  .cbbl::before,
+  .cbbl::after {
+	content: '';
+	display: block;
+	position: absolute;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
+  }
+  .cbbl::after {
+	background: #fff;
+	width: 9px;
+	height: 3px;
+	bottom: -14px;
+  }
+  .cbbl::before {
+	width: 15px;
+	height: 8px;
+	background: #fff;
+	bottom: -11px;
+	border-left: 3px solid #000;
+	border-right: 3px solid #000;
+  }
+  .cbbl--hover:hover {
+	background-color: #eee;
+	color: #000;
+	box-shadow: 0 -3px #eee, 0 -6px #7bc8a4, 3px 0 #eee, 3px -3px #7bc8a4, 6px 0 #7bc8a4, 0 3px #eee, 0 6px #7bc8a4, -3px 0 #eee, -3px 3px #7bc8a4, -6px 0 #7bc8a4, -3px -3px #7bc8a4, 3px 3px #7bc8a4, 3px 9px #cae9db, 6px 6px #cae9db, 9px 3px #cae9db;
+  }
+  .cbbl--hover:hover::before {
+	background: #eee;
+	border-left-color: #7bc8a4;
+	border-right-color: #7bc8a4;
+  }
+  .cbbl--hover:hover::after {
+	background: #eee;
+  }
+  .cbbl--hover:hover.cbbl--btn input[type=submit],
+  .cbbl--hover:hover.cbbl--btn button,
+  .cbbl--hover:hover.cbbl--btn a {
+	color: #000;
+  }
+  .cbbl::before,
+  .cbbl::after {
+	left: 20%;
+  }
+  .cbbl::after {
+	margin-left: 6px;
+	box-shadow: -3px 0 #000, 3px 0 #000, 3px 3px #fff, 0px 3px #000, 6px 3px #000, 9px 3px #aaa, 3px 6px #000, 6px 6px #000, 9px 6px #aaa, 6px 9px #aaa;
+  }
+  .cbbl.cbbl--hover:hover::after {
+	box-shadow: -3px 0 #7bc8a4, 3px 0 #7bc8a4, 3px 3px #eee, 0px 3px #7bc8a4, 6px 3px #7bc8a4, 9px 3px #cae9db, 3px 6px #7bc8a4, 6px 6px #7bc8a4, 9px 6px #cae9db, 6px 9px #cae9db, 9px 9px #7bc8a4;
+  }
+  .cbbl--up {
+	margin: 29px 9px 10px 6px;
+  }
+  .cbbl--up::before {
+	top: -11px;
+	bottom: auto;
+  }
+  .cbbl--up::after {
+	top: -14px;
+	bottom: auto;
+	box-shadow: -3px 0 #000, 3px 0 #000, 3px -3px #fff, 0px -3px #000, 6px -3px #000, 3px -6px #000, 6px -6px #000;
+  }
+  .cbbl--up.cbbl--hover:hover::after {
+	box-shadow: -3px 0 #7bc8a4, 3px 0 #7bc8a4, 3px -3px #eee, 0px -3px #7bc8a4, 6px -3px #7bc8a4, 3px -6px #7bc8a4, 6px -6px #7bc8a4;
+  }
+  .cbbl--up.cbbl--right::after {
+	box-shadow: 3px 0 #000, -3px 0 #000, -3px -3px #fff, 0px -3px #000, -6px -3px #000, -3px -6px #000, -6px -6px #000;
+  }
+  .cbbl--up.cbbl--right.cbbl--hover:hover::after {
+	box-shadow: 3px 0 #7bc8a4, -3px 0 #7bc8a4, -3px -3px #eee, 0px -3px #7bc8a4, -6px -3px #7bc8a4, -3px -6px #7bc8a4, -6px -6px #7bc8a4;
+  }
+  .cbbl--right::before,
+  .cbbl--right::after {
+	left: auto;
+	right: 20%;
+  }
+  .cbbl--right::after {
+	margin-left: 0;
+	margin-right: 6px;
+	box-shadow: 3px 0 #000, -3px 0 #000, -3px 3px #fff, 0px 3px #000, -6px 3px #000, -3px 6px #000, -6px 6px #000, -3px 9px #aaa, 0 6px #aaa, 3px 3px #aaa, 6px 0px #aaa;
+  }
+  .cbbl--right.cbbl--hover:hover::after {
+	box-shadow: 3px 0 #7bc8a4, -3px 0 #7bc8a4, -3px 3px #eee, 0px 3px #7bc8a4, -6px 3px #7bc8a4, -3px 6px #7bc8a4, -6px 6px #7bc8a4, -3px 9px #cae9db, 0 6px #cae9db, 3px 3px #cae9db, 6px 0px #cae9db;
+  }
+  .cbbl--no-selection {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  .cbbl--btn {
+	cursor: pointer;
+  }
+  .cbbl--btn input[type=submit],
+  .cbbl--btn button,
+  .cbbl--btn a {
+	cursor: pointer;
+	transition: color 0.3s ease;
+  }
+  .cbbl--btn:active {
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+  }
+  
