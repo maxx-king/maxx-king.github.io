@@ -33,9 +33,12 @@ section {
 }
   
 .image-gallery > li {
-    flex-basis: 250px;
+    flex-basis: 200px;
     position: relative;
     list-style-type: none;
+    background-color: white;
+    border-radius: 25px;
+    @media (max-width:800px) {flex-basis: 100px}
 }
   
 .image-gallery li img {
@@ -78,6 +81,7 @@ section {
 	text-align: center;
 	font-weight: 700;
 	font-size: 1.5rem;
+  @media (max-width:800px) {font-size: .75rem;}
 	background-color: #fff;
 	color: #000;
 	padding: 5px;
