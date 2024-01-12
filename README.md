@@ -10,4 +10,5 @@ TODO:
 -> Projects section
 -> Refactor and simplify css
 -> Cleanup assests
--> 
+-> Make 'download' resume btn work + style
+-> texture/material for hero section
