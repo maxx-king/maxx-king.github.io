@@ -1,7 +1,7 @@
 #rendererContainer {
     display: flex;
     max-width: 1920px;
-	margin: auto;
+	  margin: auto;
     height: 100vh;
 }
 
@@ -29,11 +29,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
 }
   
 .image-gallery > li {
     flex-basis: 200px;
+    height: 200px;
     position: relative;
     list-style-type: none;
     background-color: white;
@@ -42,9 +43,9 @@ section {
 }
   
 .image-gallery li img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
-    height: auto;
+    height: 100%;
     vertical-align: middle;
     border-radius: 25px;
 }
@@ -53,16 +54,15 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #333;
-    opacity: 0.502;
+    backdrop-filter: blur(5px);
     top: 0;
     left: 0;
     transform: scale(0);
-    transition: all 0.1s 0.1s ease-in-out;
-    color: #fff;
-    text-shadow: 0 0 5px black;
+    transition: all 0.01s 0.01s ease-in-out;
+    color: black;
     font-size: 3rem;
-    border-radius: 50%;
+    font-weight: 700;
+    border-radius: 25px;
     /* center overlay text */
     display: flex;
     align-items: center;
