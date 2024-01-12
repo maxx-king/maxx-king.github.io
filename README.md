@@ -19,3 +19,5 @@ TODO:
 -> Make 'download' resume btn work + style
 
 -> texture/material for hero section
+
+-> favicon not rendering on live site?
