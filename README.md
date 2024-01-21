@@ -14,8 +14,8 @@ TODO:
 
 -> Refactor and simplify css
 
--> Cleanup assests
-
--> Make 'download' resume btn work + style
-
 -> texture/material for hero section
+
+-> favicon not rendering on live site? works in dev? build process maybe?
+
+-> Add back Panch :(

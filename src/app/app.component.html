@@ -1,14 +1,16 @@
-<div style="margin: 0; background-color: #C2B280; width: 100%;">
+<div style="margin: 0; width: 100%; ">
   <div style="max-width: 1920px; margin: auto;">
 
+    <!-- Hero Section -->
     <div #rendererContainer id="rendererContainer"></div>
   
-    <div style="background-image: url(../../assets/images/matthew-brodeur-DH_u2aV3nGM-unsplash.jpg)">
-      <div style="padding: 10% 0% 0% 0%">
-        <div style="width: 60%; margin: auto">
+    <!-- About Section -->
+    <div style="display: flex; background-image:  linear-gradient(to top, transparent, black), url(../../assets/images/matthew-brodeur-DH_u2aV3nGM-unsplash.jpg); height: 90vh; padding-top: 10%">
+      <div style="width: 50%;">
+        <div style="width: 85%; padding-left: 10%">
           <div class="cbbl">
-            <strong>Hey there, I'm Maxx!</strong>
-            <br/>
+            <strong >Hi there, I'm Maxx!</strong>
+            <br/><br/>
             &nbsp;&nbsp;&nbsp;&nbsp;As a dynamic full-stack software engineer, my strength lies in my ability to foster effective collaboration within teams to craft solutions that are not only scalable but also user-friendly. I'm all about embracing new technologies and thrive in diverse and dynamic work settings.
             <br/><br/>
             &nbsp;&nbsp;&nbsp;&nbsp;My development philosophy is grounded in the principles of iteration and experimentation. I believe that the best solutions are often discovered through a process of continuous refinement. This approach allows us to make informed, effective decisions at every stage of the project, ensuring that we're always aligned with our end goals.
@@ -18,97 +20,143 @@
             <strong>Let's collaborate to build a brighter future together!</strong>
           </div> 
         </div>
-        <div style="z-index: 0;">
-          <img src="../assets/images/sticker.png" width="50%"/>
-          <img src="../assets/images/pancho.png" width="30%"/>
-        </div>
+      </div>
+      <div style="width: 50%; display: flex; justify-content: end;">
+        <img src="../assets/images/sticker.png" width="85%"/>
+        <!-- TODO: add back Panch :( -->
       </div>
     </div>
 
-    <div style=" background: linear-gradient(black, #C2B280)">
-      <div style="display: flex; flex-direction: column; width: 60%; height: 40vh; margin: auto; object-fit: contain; padding: 10% 10% 0% 10%">
+    <!-- Resume Section -->
+    <div style="height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: black;">
+      <div style="width: 60%; height: 60%; margin: auto; object-fit: contain; padding: 0% 10% 0% 10%">
         <iframe src="../../assets/MaxxKingResume.pdf" style="width: 100%;height: 100%;border: none;"></iframe>
-        <button style="width: 40%; margin: auto; margin-top: 5%">Download Resume</button>
       </div>
     </div>
 
+    <!-- Tech Stack Section -->
     <section style="flex-direction: column">
-      <h1 style="font-size: 4rem;">Tech stack</h1>
+      <h1 style="font-size: 4rem; text-shadow: #FC0 1px 0 10px;">Tech Stack</h1>
       <div style="width: 90%;">
-          <div>
-              <ul class="image-gallery">
-                  <li>
-                      <img src="../../assets/images/icons/angular-icon.svg" alt="" />
-                      <div class="overlay"><span>Angular.js</span></div>
-                  </li>
-                  <li>
-                    <img src="../../assets/images/icons/react-icon.png" alt="" />
-                    <div class="overlay"><span>React</span></div>
-                  </li>
-                  <li>
-                    <img src="../../assets/images/icons/node-icon.svg" alt="" />
-                    <div class="overlay"><span>Node.js</span></div>
-                  </li>
-                  <li>
-                    <img src="../../assets/images/icons/html-icon.png" alt="" />
-                    <div class="overlay"><span>HTML</span></div>
-                  </li>
-                  <li>
-                      <img src="../../assets/images/icons/css-icon.png" alt="" />
-                      <div class="overlay"><span>CSS</span></div>
-                  </li>
-                  <li>
-                    <img src="../../assets/images/icons/js-icon.jpg" alt="" />
-                    <div class="overlay"><span>Javascript</span></div>
-                  </li>
-                  <li>
-                    <img src="../../assets/images/icons/ts-icon.png" alt="" />
-                    <div class="overlay"><span>Typescript</span></div>
-                  </li>
-                  <li>
-                    <img src="../../assets/images/icons/php-icon.svg" alt="" />
-                    <div class="overlay"><span>PHP</span></div>
-                  </li>
-                  <li>
-                    <img src="../../assets/images/icons/python-icon.svg" alt="" />
-                    <div class="overlay"><span>Python</span></div>
-                  </li>
-                  <li>
-                      <img src="../../assets/images/icons/java-icon.png" alt="" />
-                      <div class="overlay"><span>Java</span></div>
-                  </li>
-                  <li>
-                    <img src="../../assets/images/icons/cPlusPlus-icon.png" alt="" />
-                    <div class="overlay"><span>C++</span></div>
-                  </li>
-                  <li>
-                      <img src="../../assets/images/icons/perl-icon.jpg" alt="" />
-                      <div class="overlay"><span>Perl</span></div>
-                  </li>
-                  <li>
-                    <img src="../../assets/images/icons/mySql-icon.png" alt="" />
-                    <div class="overlay"><span>mySQL</span></div>
-                  </li>
-                  <li>
-                    <img src="../../assets/images/icons/git-icon.png" alt="" />
-                    <div class="overlay"><span>Git</span></div>
-                  </li>
-              </ul>
-          </div>
+        <ul class="image-gallery">
+            <li>
+                <img src="../../assets/images/icons/angular-icon.svg" alt="" />
+                <div class="overlay"><span>Angular.js</span></div>
+            </li>
+            <li>
+              <img src="../../assets/images/icons/react-icon.png" alt="" />
+              <div class="overlay"><span>React</span></div>
+            </li>
+            <li>
+              <img src="../../assets/images/icons/node-icon.svg" alt="" />
+              <div class="overlay"><span>Node.js</span></div>
+            </li>
+            <li>
+              <img src="../../assets/images/icons/html-icon.png" alt="" />
+              <div class="overlay"><span>HTML</span></div>
+            </li>
+            <li>
+                <img src="../../assets/images/icons/css-icon.png" alt="" />
+                <div class="overlay"><span>CSS</span></div>
+            </li>
+            <li>
+              <img src="../../assets/images/icons/js-icon.jpg" alt="" />
+              <div class="overlay"><span>Javascript</span></div>
+            </li>
+            <li>
+              <img src="../../assets/images/icons/ts-icon.png" alt="" />
+              <div class="overlay"><span>Typescript</span></div>
+            </li>
+            <li>
+              <img src="../../assets/images/icons/php-icon.svg" alt="" />
+              <div class="overlay"><span>PHP</span></div>
+            </li>
+            <li>
+              <img src="../../assets/images/icons/python-icon.svg" alt="" />
+              <div class="overlay"><span>Python</span></div>
+            </li>
+            <li>
+                <img src="../../assets/images/icons/java-icon.png" alt="" />
+                <div class="overlay"><span>Java</span></div>
+            </li>
+            <li>
+              <img src="../../assets/images/icons/cPlusPlus-icon.png" alt="" />
+              <div class="overlay"><span>C++</span></div>
+            </li>
+            <li>
+                <img src="../../assets/images/icons/perl-icon.jpg" alt="" />
+                <div class="overlay"><span>Perl</span></div>
+            </li>
+            <li>
+              <img src="../../assets/images/icons/mySql-icon.png" alt="" />
+              <div class="overlay"><span>mySQL</span></div>
+            </li>
+            <li>
+              <img src="../../assets/images/icons/git-icon.png" alt="" />
+              <div class="overlay"><span>Git</span></div>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <!-- TODO:  
+          Style
+          Quick desc
+          Image for each
+          Link to separate page
+    -->
+    <!-- Projects Section -->
+    <section style="flex-direction: column">
+      <h1 style="font-size: 4rem; text-shadow: #FC0 1px 0 10px;">Projects</h1>
+      <div style="width: 90%;">
+        <ul class="project-gallery">
+          <li>
+            <h1>This Website:</h1>
+            <a href="https://github.com/maxx-king/maxx-king.github.io" target="_blank">Click here to view the source code on github</a>
+            <p>This project is a static site hosted for free with github pages. GoDaddy was used for aquiring the domain name and managing dns records. This combination of tools allows me to minimize the maintence and operational costs for this project without too many limitations </p>
+          </li>
+          <li>
+            <img src="../../assets/images/icons/git-icon.png" alt="" style="object-fit: contain; height: 60%"/>
+            <h1>1964 Manx</h1>
+            <p>desc...</p>
+            <button>Click me to learn more</button>
+          </li>
+          <li>
+            <img src="../../assets/images/icons/git-icon.png" alt="" style="object-fit: contain; height: 60%"/>
+            <h1>AI/ML</h1>
+            <p>desc...</p>
+            <button>Click me to learn more</button>
+          </li>
+          <li>
+            <img src="../../assets/images/icons/git-icon.png" alt="" style="object-fit: contain; height: 60%"/>
+            <h1>3D Printing</h1>
+            <p>desc...</p>
+            <button>Click me to learn more</button>
+          </li>
+        </ul>
       </div>
     </section>
     
+    <!-- Contact Section -->
+    <section style="flex-direction: column">
+      <h1 style="font-size: 4rem; text-shadow: #FC0 1px 0 10px;">Contact</h1>
+      <div style="width: 90%;">
+        <ul class="image-gallery">
+          <li>
+            <img src="../assets/images/icons/email-icon.JPG" alt=""/>
+          </li>
+          <li>
+            <img src="../assets/images/icons/linkedin-icon.png" alt=""/>
+          </li>
+          <li>
+            <img src="../assets/images/icons/git-icon.png" alt=""/>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- TODO: Projects section here -->
-    <!-- See link below for this webiste's repository -->
-    <!-- https://github.com/maxx-king/maxx-king.github.io -->
-
-    <!-- Reeltime.fish (link) -->
-    <!-- < project description > -->
-    <!-- < images > -->
-
-    <!-- 3d printing (on demand / surfboards) -->
-    <!-- < project description > -->
-    <!-- < images > -->
+    <!-- Footer Section -->
+    <div style="height: 10vh; width: 100%; background-color: black; display: flex; align-items: center; justify-content: center; border-radius: 25px 25px 0px 0px ">
+      <p style="color: white;">Maxx King &copy; 2024</p>
+    </div>
   </div>
 </div>
