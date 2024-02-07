@@ -2,15 +2,22 @@
   display: flex;
   max-width: 1920px;
   margin: auto;
-  height: 100vh;
+  height: 90vh;
 }
 section {
   display: flex;
-  padding: 2% 0%;
-  height: fit-content;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  margin: auto;
+
+  height: fit-content;
+  width: 100%;
+  max-width: 1920px; 
+}
+h1 {
+  color: white;
+  font-size: 4rem; 
+  text-shadow: #FC0 1px 0 20px;
 }
 .project-gallery {
   display: flex;
@@ -25,7 +32,13 @@ section {
   list-style-type: none;
   background-color: white;
   border-radius: 25px;
+  filter: drop-shadow(3px 3px grey);
   @media (max-width:800px) {flex-basis: 200px; height: 200px;}
+}
+.project-gallery > li > div {
+  margin: 5% 5%;
+  max-width: 90%; 
+  max-height: 90%;
 }
 .image-gallery {
   display: flex;
@@ -40,6 +53,8 @@ section {
   list-style-type: none;
   background-color: white;
   border-radius: 25px;
+  filter: drop-shadow(3px 3px grey);
+  z-index: 1;
   @media (max-width:800px) {flex-basis: 100px; height: 100px;}
 }
 .image-gallery li img {
@@ -48,6 +63,7 @@ section {
   height: 100%;
   vertical-align: middle;
   border-radius: 25px;
+  z-index: 2;
 }
 .overlay {
   position: absolute;
@@ -67,6 +83,7 @@ section {
   justify-content: center;
   z-index: 10;
   text-shadow: #FC0 1px 0 10px;
+  font-size: 5vh;
 }
 .image-gallery li:hover .overlay {
     transform: scale(1);
@@ -77,14 +94,13 @@ section {
 	display: inline-block;
 	margin: 10px 9px 29px 6px;
 	text-align: center;
-	font-weight: 700;
 	font-size: 1.4vh;
 	background-color: #fff;
 	color: #000;
 	padding: 5px;
 	box-shadow: 0 -3px #fff, 0 -6px #000, 3px 0 #fff, 3px -3px #000, 6px 0 #000, 0 3px #fff, 0 6px #000, -3px 0 #fff, -3px 3px #000, -6px 0 #000, -3px -3px #000, 3px 3px #000, 3px 9px #aaa, 6px 6px #aaa, 9px 3px #aaa;
 	box-sizing: border-box;
-
+  font-family: 'Press Start 2P'; 
   @media (max-width:800px) {font-size: .75vw;}
 }
 .cbbl::before,

@@ -1,15 +1,27 @@
 <div style="margin: 0; width: 100%; ">
-  <div style="max-width: 1920px; margin: auto;">
+  <!-- Hero Section -->
+  <!-- <div style="background-color: #070B06"> -->
+    <!-- <div style="display: flex; max-width: 1920px; height: 100vh; background-color: #070B06; justify-content: center; align-items: center; margin: auto auto;"> -->
+      <section style="height: 90vh">
+        <div style="flex-direction: column; text-shadow: #FC0 0 0 25px; width: 40%; margin-left: 5%">
+          <h1 style="color: white; font-size: 7vh;">Maxx King</h1>
+          <h2 style="color: white">Full-Stack Software Enginner @ <a style="text-decoration: none; color:white;" href="https://www.clearhello.com/" target="_blank">ClearHello</a></h2>
+          <h3 style="color: white">Composite Materials Research</h3>
+          <h3 style="color: white">Creator</h3>
+        </div>
+        <div style="width: 60%">
+          <div #rendererContainer id="rendererContainer"></div>
+        </div>
+      </section>
+    <!-- </div>
+  </div> -->
 
-    <!-- Hero Section -->
-    <div #rendererContainer id="rendererContainer"></div>
-  
-    <!-- About Section -->
-    <div style="display: flex; background-image:  linear-gradient(to top, transparent, black), url(../../assets/images/matthew-brodeur-DH_u2aV3nGM-unsplash.jpg); height: 90vh; padding-top: 10%">
+  <!-- About Section -->
+  <section style="background-image:  linear-gradient(to top, transparent, #070B06), url(../../assets/images/matthew-brodeur-DH_u2aV3nGM-unsplash.jpg); padding-top: 5%;">
       <div style="width: 50%;">
         <div style="width: 85%; padding-left: 10%">
           <div class="cbbl">
-            <strong >Hi there, I'm Maxx!</strong>
+            <strong >Hey there, welcome to my portfolio!</strong>
             <br/><br/>
             &nbsp;&nbsp;&nbsp;&nbsp;As a dynamic full-stack software engineer, my strength lies in my ability to foster effective collaboration within teams to craft solutions that are not only scalable but also user-friendly. I'm all about embracing new technologies and thrive in diverse and dynamic work settings.
             <br/><br/>
@@ -17,22 +29,24 @@
             <br/><br/>
             &nbsp;&nbsp;&nbsp;&nbsp; But what truly sets me apart is my unwavering commitment to delivering solutions that meet the actual needs of our users. I constantly evaluate our progress to ensure that we're on the right track and that we're building a future that's both innovative and practical.
             <br/><br/>
-            <strong>Let's collaborate to build a brighter future together!</strong>
+            <strong>Want to find out more? Keep scrolling to see some of the current projects i'm working on!</strong>
           </div> 
         </div>
       </div>
       <div style="width: 50%; display: flex; justify-content: end;">
         <img src="../assets/images/sticker.png" width="85%"/>
-        <!-- TODO: add back Panch :( -->
       </div>
-    </div>
+  </section>
 
-    <!-- Resume Section -->
-    <div style="height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: black;">
-      <div style="width: 60%; height: 60%; margin: auto; object-fit: contain; padding: 0% 10% 0% 10%">
-        <iframe src="../../assets/MaxxKingResume.pdf" style="width: 100%;height: 100%;border: none;"></iframe>
-      </div>
+  <!-- Resume Section -->
+  <section style="height: 60vh; padding-top: 5%;">
+    <iframe src="../../assets/MaxxKingResume.pdf" style="width: 60vw;height: 100%;border: none;"></iframe>
+  </section>
+  <!-- <div style="height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #070B06;">
+    <div style="width: 60%; height: 60%; margin: auto; object-fit: contain;">
+      <iframe src="../../assets/MaxxKingResume.pdf" style="width: 100%;height: 100%;border: none;"></iframe>
     </div>
+  </div> -->
 
     <!-- Tech Stack Section -->
     <section style="flex-direction: column">
@@ -98,39 +112,60 @@
         </ul>
       </div>
     </section>
-    <!-- TODO:  
-          Style
-          Quick desc
-          Image for each
-          Link to separate page
-    -->
+
     <!-- Projects Section -->
     <section style="flex-direction: column">
       <h1 style="font-size: 4rem; text-shadow: #FC0 1px 0 10px;">Projects</h1>
       <div style="width: 90%;">
         <ul class="project-gallery">
           <li>
-            <h1>This Website:</h1>
-            <a href="https://github.com/maxx-king/maxx-king.github.io" target="_blank">Click here to view the source code on github</a>
-            <p>This project is a static site hosted for free with github pages. GoDaddy was used for aquiring the domain name and managing dns records. This combination of tools allows me to minimize the maintence and operational costs for this project without too many limitations </p>
+            <div>
+              <h2>This Website:</h2>
+              <div>GitHub: <a href="https://github.com/maxx-king/maxx-king.github.io" target="_blank">Click me to view source code</a></div>
+              <div>Alternate URL: <a href="https://maxx-king.github.io" target="_blank">maxx-king.github.io</a>*</div>
+              <div>*will redirect back to the current url</div>
+              <p >This project is a static site hosted for free with github pages. GoDaddy was used for aquiring the domain name and managing dns records. This combination of tools allows me to minimize the maintence and operational costs for this project without too many limitations.</p>
+            </div>
           </li>
           <li>
-            <img src="../../assets/images/icons/git-icon.png" alt="" style="object-fit: contain; height: 60%"/>
-            <h1>1964 Manx</h1>
-            <p>desc...</p>
-            <button>Click me to learn more</button>
+            <div>
+              <h2>Pancho</h2>
+              <p>Rescued 3/31/2021, 100% certified good boy, master of manipulation</p>
+              <img style="height: 260px" src="../../assets/images/pancho.png" />
+            </div>
           </li>
           <li>
-            <img src="../../assets/images/icons/git-icon.png" alt="" style="object-fit: contain; height: 60%"/>
-            <h1>AI/ML</h1>
-            <p>desc...</p>
-            <button>Click me to learn more</button>
+            <div>
+              <h2>AI/ML</h2>
+              <p>Dolphin Species - Completed while attending SDSU. Source code not publicly available by request of the professor. Using a dataset of echolocation clicks collected from various buoys, we were able to achieve a species classification accuracy of over 85%.</p>
+              <p>Sports Betting - Combine a python web scraper to gather nfl stats and feed it into an ai capable of determining if a bet is 'good'. Will release code once its no longer profitable</p>
+              <p></p>
+            </div>
           </li>
           <li>
-            <img src="../../assets/images/icons/git-icon.png" alt="" style="object-fit: contain; height: 60%"/>
-            <h1>3D Printing</h1>
-            <p>desc...</p>
-            <button>Click me to learn more</button>
+            <div>
+              <h2>1964 Manx Dune Buggy</h2>
+              <p>Blew up the old air-cooled type 1 vw engine (whoops)<br/>EV swap in progress, still need to find a better way to document this</p>
+              <img style="height: 240px" src="../../assets/images/manx.png" />
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2>3D Printing</h2>
+              <p>What started out as a hobby has slowly evolved into printing on demand, partering with local members of the community. Creating and manufacturing one off products to fufil a specific niche.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2>Composite Materials Research</h2>
+              <p>A fancy way of saying I like to make, and sometimes break, surfboards. Currently experimenting with carbon fiber (increased durability), cork (increased sustainability), and solid wood (both!)</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2><a href="https://reeltime.fish" target="_blank">https://reeltime.fish</a></h2>
+              <p>Powered by AI, webpage displays a livestream of the Monterey Bay Aquariam. Gives visitors the ability to identify any species they see by with one click.</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -138,25 +173,25 @@
     
     <!-- Contact Section -->
     <section style="flex-direction: column">
-      <h1 style="font-size: 4rem; text-shadow: #FC0 1px 0 10px;">Contact</h1>
+      <h1>Contact</h1>
       <div style="width: 90%;">
         <ul class="image-gallery">
           <li>
-            <img src="../assets/images/icons/email-icon.JPG" alt=""/>
+            <a href="mailto: maxxking98@gmail.com" target="_blank"><img src="../assets/images/icons/email-icon.JPG" alt=""/></a>
           </li>
           <li>
-            <img src="../assets/images/icons/linkedin-icon.png" alt=""/>
+            <a href="https://linkedin.com/in/maxx-king" target="_blank"><img src="../assets/images/icons/linkedin-icon.png" alt=""/></a>
           </li>
           <li>
-            <img src="../assets/images/icons/git-icon.png" alt=""/>
+            <a href="https://github.com/maxx-king" target="_blank"><img src="../assets/images/icons/git-icon.png" alt=""/></a>
           </li>
         </ul>
       </div>
     </section>
 
     <!-- Footer Section -->
-    <div style="height: 10vh; width: 100%; background-color: black; display: flex; align-items: center; justify-content: center; border-radius: 25px 25px 0px 0px ">
-      <p style="color: white;">Maxx King &copy; 2024</p>
+    <div style="height: 10vh; max-width: 1920px; background-color: white; display: flex; align-items: center; justify-content: center; border-radius: 25px 25px 0px 0px; text-align: center; margin: auto; margin-top: 3%;">
+      <h3 style="color: black;">Maxx King &copy; 2024<br/>San Diego, CA</h3>
     </div>
-  </div>
+  <!-- </div> -->
 </div>
