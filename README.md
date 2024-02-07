@@ -10,12 +10,5 @@ Push: git push
 
 TODO:
 
--> Projects section
-
+-> Complete projects sectioon
 -> Refactor and simplify css
-
--> texture/material for hero section
-
--> favicon not rendering on live site? works in dev? build process maybe?
-
--> Add back Panch :(
