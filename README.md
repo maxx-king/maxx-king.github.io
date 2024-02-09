@@ -16,8 +16,8 @@ Hey there, thanks for checking out the code behind my online portfolio! This pro
 
 # Google Lighthouse
 Performance analysis and optimizations made using Google Lighthouse. Current score as of 2/9/24
-![image info](./assets/images/lighthouse-score.JPG)
 
+![image](./src/assets/images/lighthouse-score.JPG)
 
 # 🏃 Getting Started
 This application requires ...
