@@ -81,7 +81,7 @@ export class AppComponent implements AfterViewInit {
 
   private addFloor(): void {
     const floorGeometry = new THREE.PlaneGeometry(100, 100);
-    const floorMaterial = new THREE.MeshStandardMaterial({ color: 0x000000, side: THREE.DoubleSide, transparent: true, opacity: 0.5});
+    const floorMaterial = new THREE.MeshStandardMaterial({ color: 0x000000, side: THREE.DoubleSide, transparent: true, opacity: 0.5, wireframe: true});
     const floor = new THREE.Mesh(floorGeometry, floorMaterial);
     floor.rotation.x = -Math.PI / 2; // Rotate the floor to be horizontal
     floor.position.y = -12; // Adjust the height of the floor below the model
@@ -92,6 +92,7 @@ export class AppComponent implements AfterViewInit {
     const loader = new ThreeMFLoader();
     loader.load('../../assets/mk_coin_logo.3mf', (obj) => { 
       obj.scale.set(0.18, 0.18, 0.18);
+      obj.position.x = 8;
       obj.name = "coin"
       this.scene.add(obj);
     });

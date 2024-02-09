@@ -25,7 +25,7 @@ This application requires ...
 
 
 # 🚀 Deploy
-Build: ```bash ng build --output-path docs --base-href /```
+Build: ```ng build --output-path docs --base-href /```
 
 (failure to do the above will update the repo, but not the live site)
 
@@ -37,18 +37,36 @@ Push: ```git push```
 
 
 # 🛠️ TODO
+### -> GA4?
+
+### -> 404 page? 
+
+
 ### -> Hero Section:
         - Dynamic resize threejs container?
         - breakpoint to vertical align?
+
+### -> About Section:
+        - Too wordy
+        - Better responsive layout
+
+### -> Resume Section:
+        - No scroll, make it fit
+
+### -> Tech Stack Section:
+        - Img src? or fix cropping issues
+        - Dynamic loading animation, only once when coming into view for the first time
 
 ### -> Projects Section:
         - Change css, different from tech stack section
         - New image assets 
         - Refine text
         - Click to expand 4x size, embed image slider?
+        - Dynamic loading animation, only once when coming into view for the first time
 
 ### -> Contact Section:
         - Change css, different from tech stack + projects section
+        - Dynamic loading animation, only once when coming into view for the first time
 
 ### -> Navbar:
         - Sticky on bottom of hero section, 10vh
