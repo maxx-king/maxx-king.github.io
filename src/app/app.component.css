@@ -6,41 +6,49 @@
   height: 90vh;
 }
 
-/* Project Section, TODO */
+/* TODO: Navbar Section, CSS Sticky Layout */
+
+/* Project Section, CSS Grid Layout*/
 .project-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  place-content: center;
   gap: 25px;
+  grid-template-columns: repeat(auto-fit, 30%);
   padding: 0px 40px;
+
+  @media (max-width:800px) {
+    gap: 10px;
+    padding: 0px 10px;
+  }
 }
 .project-gallery > li {
-  flex-basis: 400px;
   height: 400px;
   position: relative;
   list-style-type: none;
   background-color: white;
   border-radius: 25px;
   box-shadow: 5px 5px 5px rgba(160, 160, 160, 0.5);
-  @media (max-width:800px) {flex-basis: 200px; height: 200px;}
 }
 .project-gallery > li > div {
   margin: 5% 5%;
-  max-width: 90%; 
-  max-height: 90%;
+  width: 90%; 
+  height: 90%;
+  overflow: hidden;
 }
 .project-gallery > li > div > h3 {
   color: #070B06;
   text-shadow: none;
 }
 
-/* Tech Stack Section, flexbox */
+/* Tech Stack Section, CSS Flexbox Layout */
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
   padding: 0px 40px;
+
+  @media (max-width:800px) {padding: 0px 10px; gap: 10px}
 }
 .image-gallery > li {
   flex-basis: 200px;
@@ -50,9 +58,10 @@
   background-color: white;
   border-radius: 25px;
   box-shadow: 5px 5px 5px rgba(160, 160, 160, 0.5);
-  @media (max-width:800px) {flex-basis: 100px; height: 100px;}
+
+  @media (max-width:800px) {flex-basis: 100px; height: 100px}
 }
-.image-gallery li img {
+.image-gallery > li > img {
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -60,31 +69,36 @@
   border-radius: 25px;
 }
 .overlay {
-  /* blur background and transition */
+  /* set position/size to be exactly its parent div */
   position: absolute;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(7px);
   top: 0;
   left: 0;
-  transform: scale(0);
+  border-radius: inherit;
+ 
+  backdrop-filter: blur(7px);
+
+  /* animation, hidden by default */
+  transform: scale(0);  
   transition: all 0.01s 0.01s ease-in-out;
-  border-radius: 25px;
+
   /* center overlay text */
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* ensure text is visible */
   z-index: 10;
-  text-shadow: #FC0 1px 0 10px;
-  font-size: 5vh;
-  color: white;
   -webkit-text-stroke: 1px #070B06;
-  font-weight: 700;
 }
 .image-gallery li:hover .overlay {
     transform: scale(1);
 }
 
+/* TODO: Contact Section, CSS Column Layout */
+
+/* TODO: resource intensive on fcp, replace with img? */
 /* https://github.com/kaisermann/comicbubbles/blob/master/README.md */
 .cbbl {
 	position: relative;
