@@ -3,6 +3,7 @@ body {
     font-family: 'Audiowide';
     background-color: #070B06;
     width: 100%;
+    user-select: none;
 }
 section {
     display: flex;

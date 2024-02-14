@@ -5,7 +5,9 @@
   margin: auto;
   height: 90vh;
 }
-
+#rendererContainer:hover {
+  cursor: pointer;
+}
 /* TODO: Navbar Section, CSS Sticky Layout */
 
 /* Project Section, CSS Grid Layout*/
@@ -38,6 +40,7 @@
 .project-gallery > li > div > h3 {
   color: #070B06;
   text-shadow: none;
+  margin: 0;
 }
 
 /* Tech Stack Section, CSS Flexbox Layout */
@@ -96,7 +99,6 @@
     transform: scale(1);
 }
 
-/* TODO: Contact Section, CSS Column Layout */
 
 /* TODO: resource intensive on fcp, replace with img? */
 /* https://github.com/kaisermann/comicbubbles/blob/master/README.md */

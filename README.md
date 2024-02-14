@@ -57,7 +57,6 @@ Push: ```git push```
         - Better responsive layout
 
 ### -> Resume Section:
-        - No scroll, make it fit
 
 ### -> Tech Stack Section:
         - Img src? or fix cropping issues
@@ -71,7 +70,6 @@ Push: ```git push```
         - Dynamic loading animation, only once when coming into view for the first time
 
 ### -> Contact Section:
-        - Change css, different from tech stack + projects section
         - Dynamic loading animation, only once when coming into view for the first time
 
 ### -> Navbar:
