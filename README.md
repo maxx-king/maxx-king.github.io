@@ -63,10 +63,8 @@ Push: ```git push```
         - Dynamic loading animation, only once when coming into view for the first time
 
 ### -> Projects Section:
-        - Change css, different from tech stack section
         - New image assets 
         - Refine text
-        - Click to expand 4x size, embed image slider?
         - Dynamic loading animation, only once when coming into view for the first time
 
 ### -> Contact Section:
