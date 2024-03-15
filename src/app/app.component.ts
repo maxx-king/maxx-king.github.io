@@ -1,4 +1,4 @@
-import { Component, ElementRef, NgZone, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, NgZone, ViewChild, ViewChildren, QueryList, AfterViewInit } from '@angular/core';
 import * as THREE from 'three';
 import { ThreeMFLoader } from 'three/examples/jsm/loaders/3MfLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
@@ -21,13 +21,30 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.initThree();
-    this.addModel();
     this.initControls();
     this.addFloor();
+    this.addModel();
     this.animate();
 
     window.addEventListener('mousedown', (e) => this.enableControls(e));
     window.addEventListener('mouseup', (e) => this.disableControls(e));
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const expandButtons = document.querySelectorAll('.expand-btn');
+    
+      expandButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          // @ts-ignore
+          const projectDetails = button.parentElement.nextElementSibling;
+          // @ts-ignore
+          projectDetails.classList.toggle('show');
+        });
+      });
+    });
+  }
+
+  toggleDetails(card: any) {
+    card.classList.toggle('expanded');
   }
 
   private enableControls(e: MouseEvent): void {
@@ -106,6 +123,7 @@ export class AppComponent implements AfterViewInit {
         model.rotation.y += 0.01; 
       }
   
+      this.controls.update();
       // Render scene
       this.renderer.render(this.scene, this.camera);
   

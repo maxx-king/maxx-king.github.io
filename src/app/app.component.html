@@ -33,7 +33,7 @@
   </section>
 
   <!-- Resume Section -->
-  <section style="height: 70vh; flex-direction: column">
+  <section style="height: 90vh; flex-direction: column">
     <h1 style="margin-bottom: 0;">Resume</h1>
     <h3 style="margin: 0;"><a href="../../assets/MaxxKingResume.pdf" style="color:white;" download="" aria-label="Download Resume">(Click here to download)</a></h3>
     <iframe src="../../assets/MaxxKingResume.pdf#view=fit" style="width: 60vw; height: 100%; border: none;" title="Resume"></iframe>
@@ -105,70 +105,53 @@
   </section>
 
   <!-- Projects Section -->
-  <section style="flex-direction: column">
+  <section style="flex-direction: column;">
     <h1>Projects</h1>
-    <div>
-      <ul class="project-gallery">
-        <li>
-          <div>
-            <h3>This Website:</h3>
-            <p>Documentation: <a href="https://github.com/maxx-king/maxx-king.github.io" target="_blank" aria-label="View source code">Click Me</a></p>
-            <p>This project is a static site hosted for free with github pages. GoDaddy was used for aquiring the domain name and managing dns records. This combination of tools allows me to minimize the maintence and operational costs for this project without too many limitations.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Pancho</h3>
+      <div class="bento-box">
+        <div class="box">
+          <a href="https://github.com/maxx-king/maxx-king.github.io" target="_blank" aria-label="View source code">
+            <h3 style="color:#070B06; margin: 0;">This Website:</h3>
+            <p style="margin: 0;">(Click here to view source code)</p>
+          </a>
+          <p>This project is a static site hosted for free with github pages. GoDaddy was used for aquiring the domain name and managing dns records. This combination of tools allows me to minimize the maintence and operational costs for this project without too many limitations.</p>
+        </div>
+        <div class="box" style="flex-direction: row;">
+          <div style="width: 50%; height: 100%;">
+            <h3 style="color: #070B06;">Pancho</h3>
             <p>Rescued 3/31/2021, 100% certified good boy, master of manipulation</p>
-            <img style="height: 260px" src="../../assets/images/pancho.png" alt="My dog"/>
           </div>
-        </li>
-        <li>
-          <div>
-            <h3><a href="https://reeltime.fish" style="color: #070B06" target="_blank" aria-label="View Reeltime fish website">https://reeltime.fish</a></h3>
-            <p>( Documentation Available upon request )</p>
-            <p>Powered by AI, webpage displays a livestream of the Monterey Bay Aquariam. Gives visitors the ability to identify any species they see by with one click.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>AI/ML</h3>
-            <p>Dolphin Species - Completed while attending SDSU. Using a dataset of echolocation clicks collected from various buoys, we were able to achieve a species classification accuracy of over 85%.</p>
-            <!-- <p>Sports Betting - Combine a python web scraper to gather nfl stats and feed it into an ai capable of determining if a bet is 'good'. Will release code once its no longer profitable</p> -->
-            
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>1964 Manx Dune Buggy</h3>
-            <p>Blew up the old air-cooled type 1 vw engine (whoops)<br/>EV swap in progress, still need to find a better way to document this</p>
-            <img style="height: 50%" src="../../assets/images/manx.png" alt="1964 Manx Dune Buggy"/>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>3D Printing</h3>
-            <p>What started out as a hobby has slowly evolved into printing on demand, partnering with local members of the community. Creating and manufacturing one off products to fufil a specific niche.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Composite Materials Research</h3>
-            <p>A fancy way of saying I like to make, and sometimes break, surfboards. Currently experimenting with carbon fiber (increased durability), cork (increased sustainability), and solid wood (both!)</p>
-          </div>
-        </li>
-      </ul>
-    </div>
+          <img style="height: 260px" src="../../assets/images/pancho.png" alt="My dog"/>
+        </div>
+        <div class="box">
+          <h3><a href="https://reeltime.fish" style="color: #070B06" target="_blank" aria-label="View Reeltime fish website">https://reeltime.fish</a></h3>
+          <p>Powered by AI, webpage displays a livestream of the Monterey Bay Aquariam. Gives visitors the ability to identify any species they see by with one click.</p>
+        </div>
+        <div class="box">
+          <h3>AI/ML</h3>
+          <p>Dolphin Species - Completed while attending SDSU. Using a dataset of echolocation clicks collected from various buoys, we were able to achieve a species classification accuracy of over 85%.</p>
+          <!-- <p>Sports Betting - Combine a python web scraper to gather nfl stats and feed it into an ai capable of determining if a bet is 'good'. Will release code once its no longer profitable</p> -->
+        </div>
+        <div class="combined-box">
+          <h3>1964 Manx Dune Buggy</h3>
+          <p>Blew up the old air-cooled type 1 vw engine (whoops)<br/>EV swap in progress, still need to find a better way to document this</p>
+          <img style="height: 250px;" src="../../assets/images/manx.png" alt="1964 Manx Dune Buggy"/>
+        </div>
+        <div class="box">
+          <h3>3D Printing / Composite Materials Research</h3>
+          <p>What started out as a hobby has slowly evolved into printing on demand, partnering with local members of the community. Creating and manufacturing one off products to fufil a specific niche.</p>
+          <p>Currently experimenting with manufacturing surfboards using this technique, and experimenting with diferent materials such as carbon fiber (increased durability), cork (increased sustainability), and solid wood (both!)</p>
+        </div>
+      </div>
   </section>
     
   <!-- Contact Section -->
   <section style="flex-direction: column;">
     <h1>Contact</h1>
     <div style="width: 100%;">
-      <div style="display: grid; place-content: center; gap: 25px; grid-template-columns: repeat(auto-fit, 20%);">
-        <a style="background-color: white; border-radius: 25px; box-shadow: 5px 5px 5px rgba(160, 160, 160, 0.5); display: flex; justify-content: center;" href="mailto: maxxking98@gmail.com" target="_blank" aria-label="Click to send me an email"><img src="../assets/images/icons/email-icon.webp" alt="" height="100px"/></a>
-        <a style="background-color: white; border-radius: 25px; box-shadow: 5px 5px 5px rgba(160, 160, 160, 0.5); display: flex; justify-content: center;" href="https://linkedin.com/in/maxx-king" target="_blank" aria-label="Click to view my LinkedIn profile"><img src="../assets/images/icons/linkedin-icon.webp" alt="" height="100px"/></a>
-        <a style="background-color: white; border-radius: 25px; box-shadow: 5px 5px 5px rgba(160, 160, 160, 0.5); display: flex; justify-content: center;" href="https://github.com/maxx-king" target="_blank" aria-label="Click to view my GitHub"><img src="../assets/images/icons/git-icon.webp" alt="" height="100px"/></a>
+      <div class="contact-section">
+        <a href="mailto: maxxking98@gmail.com" target="_blank" aria-label="Click to send me an email"><img src="../assets/images/icons/email-icon.webp" alt="" height="100px"/></a>
+        <a href="https://linkedin.com/in/maxx-king" target="_blank" aria-label="Click to view my LinkedIn profile"><img src="../assets/images/icons/linkedin-icon.webp" alt="" height="100px"/></a>
+        <a href="https://github.com/maxx-king" target="_blank" aria-label="Click to view my GitHub"><img src="../assets/images/icons/git-icon.webp" alt="" height="100px"/></a>
       </div>
     </div>
   </section>

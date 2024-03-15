@@ -10,37 +10,53 @@
 }
 /* TODO: Navbar Section, CSS Sticky Layout */
 
-/* Project Section, CSS Grid Layout*/
-.project-gallery {
+/* Project Section */
+.bento-box {
   display: grid;
-  place-content: center;
-  gap: 25px;
-  grid-template-columns: repeat(auto-fit, 30%);
-  padding: 0px 40px;
-
-  @media (max-width:800px) {
-    gap: 10px;
-    padding: 0px 10px;
-  }
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+  padding: 10px;
+  width: 85%;
+  overflow: hidden;
 }
-.project-gallery > li {
-  height: 400px;
-  position: relative;
-  list-style-type: none;
-  background-color: white;
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
   border-radius: 25px;
   box-shadow: 5px 5px 5px rgba(160, 160, 160, 0.5);
 }
-.project-gallery > li > div {
-  margin: 5% 5%;
-  width: 90%; 
-  height: 90%;
-  overflow: hidden;
+/* double width boxes */
+.box:nth-child(2),
+.box:nth-child(6) {
+  grid-column: span 2;
 }
-.project-gallery > li > div > h3 {
+/* double height boxes */
+.combined-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+  grid-column: span 1;
+  grid-row: span 2;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px rgba(160, 160, 160, 0.5);
+}
+.box:hover,
+.combined-box:hover {
+    transform: scale(1.03);
+}
+.combined-box > h3,
+.box > h3 {
   color: #070B06;
-  text-shadow: none;
-  margin: 0;
 }
 
 /* Tech Stack Section, CSS Flexbox Layout */
@@ -97,6 +113,21 @@
 }
 .image-gallery li:hover .overlay {
     transform: scale(1);
+}
+
+/* Contact Section */
+.contact-section {
+  display: grid; 
+  place-content: center; 
+  gap: 25px; 
+  grid-template-columns: repeat(auto-fit, 20%);
+}
+.contact-section > a {
+  background-color: white; 
+  border-radius: 25px; 
+  box-shadow: 5px 5px 5px rgba(160, 160, 160, 0.5); 
+  display: flex; 
+  justify-content: center;
 }
 
 

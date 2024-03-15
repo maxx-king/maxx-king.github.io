@@ -35,6 +35,7 @@ h3 {
 }
 p {
     font-size: 1vw;
+    font-family: sans-serif;
     color: #070B06;
     @media (max-width:800px) {font-size: 1vh}
 }
