@@ -23,8 +23,7 @@
 .box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
   padding: 20px;
   background-color: #fff;
   box-sizing: border-box;
@@ -40,8 +39,7 @@
 .combined-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
   padding: 20px;
   background-color: #fff;
   box-sizing: border-box;
@@ -57,6 +55,7 @@
 .combined-box > h3,
 .box > h3 {
   color: #070B06;
+  margin: 0;
 }
 
 /* Tech Stack Section, CSS Flexbox Layout */
