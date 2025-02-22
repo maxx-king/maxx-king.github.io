@@ -15,6 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FlexDisplayComponent } from './components/flex-display-carousel/flex-display/flex-display.component';
 import { FlexDisplayCarouselComponent } from './components/flex-display-carousel/flex-display-carousel.component';
 import { ParallaxComponent } from './components/parallax/parallax.component';
+import { PdfViewerComponent } from './components/pdf-viewer/pdf-viewer.component';
+import { SafePipe } from './pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ParallaxComponent } from './components/parallax/parallax.component';
     FooterComponent,
     FlexDisplayComponent,
     ParallaxComponent,
-    FlexDisplayCarouselComponent
+    FlexDisplayCarouselComponent,
+    PdfViewerComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
