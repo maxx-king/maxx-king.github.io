@@ -1,20 +1,13 @@
 .carousel-container {
+    width: 100%;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2rem;
-    background-color: #f4f4f4;
+    padding: 2rem 0;
 }
   
 .carousel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth; 
-    width: 100%; 
-    padding: 1rem 0;
-    scroll-snap-type: x mandatory;
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
   
 .carousel::-webkit-scrollbar {
@@ -28,23 +21,35 @@
 .dot-navigation {
     display: flex;
     justify-content: center;
+    gap: 0.5rem;
     margin-top: 1rem;
 }
   
 .dot {
     width: 10px;
     height: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
     border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
   
 .dot.active {
-    background-color: #333; /* Highlight active dot */
+    background: white;
 }
   
 .dot:hover {
     background-color: #777; /* Hover effect */
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .carousel {
+        overflow-x: auto; /* Enable touch scrolling on mobile */
+    }
+    
+    .dot {
+        width: 8px; /* Smaller dots on mobile */
+        height: 8px;
+    }
 }

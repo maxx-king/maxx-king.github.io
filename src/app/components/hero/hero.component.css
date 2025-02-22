@@ -1,6 +1,6 @@
 div {
     display: flex;
-    height: 60vh;
     width: 100%;
-    border: 2px dashed red;
+    align-items: center;
+    justify-content: center;
 }

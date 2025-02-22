@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,7 +33,25 @@ import { ParallaxComponent } from './components/parallax/parallax.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
+      },
+      {
+        path: 'resume',
+        component: NotFoundComponent
+      },
+      {
+        path: 'tools',
+        component: NotFoundComponent
+      },
+      {
+        path: '**',
+        component: NotFoundComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

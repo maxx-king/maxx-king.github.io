@@ -1,21 +1,23 @@
-.parallax-wrapper {
+:host {
+    display: block;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+  
+ng-content {
+    display: block;
 }
 
-.parallax-wrapper [hero] {
+::ng-deep [child1], ::ng-deep [child2] {
+    width: 100%;
     position: relative;
-    height: 100vh; /* Full viewport height */
-    z-index: 1;
 }
 
-.parallax-wrapper [flex-display] {
-    position: relative;
-    z-index: 2;
-    transform: translateY(100vh); /* Start offscreen */
-    transition: transform 0.5s ease-out;
-}
-
-.parallax-wrapper [flex-display].visible {
-    transform: translateY(0); /* Bring into view */
+/* Disable parallax effect on mobile for better performance */
+@media (max-width: 768px) {
+    :host {
+        overflow: visible;
+    }
 }
