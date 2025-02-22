@@ -1,0 +1,70 @@
+.flex-display {
+  display: flex;
+  gap: 1rem; /* Add gap between boxes */
+}
+
+.box {
+  flex: 0 0 auto; /* Prevent boxes from shrinking or growing */
+  width: 600px; /* Fixed width for each box */
+  height: 400px;
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  transition: height 0.3s ease;
+  height: 60px; /* Fixed height for one-line preview */
+  overflow: hidden;
+}
+
+.box-content h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.box-content p {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover .box-content {
+  height: auto;
+}
+
+.box:hover .box-content p {
+  opacity: 1;
+}
+
+
+  
+/* @media (max-width: 768px) {
+    .box {
+        flex: 1 1 100%;
+        margin: 1rem 0;
+    }
+} */

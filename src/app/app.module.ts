@@ -7,9 +7,13 @@ import { ThreeJSComponent } from './components/three-js/three-js.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ToolsComponent } from './pages/tools/tools.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FlexDisplayComponent } from './components/flex-display-carousel/flex-display/flex-display.component';
+import { FlexDisplayCarouselComponent } from './components/flex-display-carousel/flex-display-carousel.component';
+import { ParallaxComponent } from './components/parallax/parallax.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +22,13 @@ import { ToolsComponent } from './pages/tools/tools.component';
     HomeComponent,
     NotFoundComponent,
     HeaderComponent,
-    CarouselComponent,
     ResumeComponent,
-    ToolsComponent
+    ToolsComponent,
+    HeroComponent,
+    FooterComponent,
+    FlexDisplayComponent,
+    ParallaxComponent,
+    FlexDisplayCarouselComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+<div class="carousel-container">
+    <div class="carousel" (wheel)="onWheel($event)">
+        <app-flex-display [boxes]="boxes"></app-flex-display>
+    </div>
+    <div class="dot-navigation">
+        <span
+          *ngFor="let box of boxes; let i = index"
+          class="dot"
+          [class.active]="isBoxVisible(i)"
+          (click)="scrollToBox(i)"
+        ></span>
+    </div>
+</div>

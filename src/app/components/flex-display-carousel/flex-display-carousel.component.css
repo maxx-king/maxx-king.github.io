@@ -1,0 +1,50 @@
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+  
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
+    width: 100%; 
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+  
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+  
+.box {
+    scroll-snap-align: start;
+}
+
+.dot-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+  
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.dot.active {
+    background-color: #333; /* Highlight active dot */
+}
+  
+.dot:hover {
+    background-color: #777; /* Hover effect */
+}
