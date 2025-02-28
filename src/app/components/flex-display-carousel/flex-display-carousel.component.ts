@@ -9,27 +9,27 @@ import { iFlexDisplay } from './flex-display/flex-display.component';
 export class FlexDisplayCarouselComponent implements AfterViewInit {
   boxes: iFlexDisplay[] = [
     {
-      title: 'Back-End Projects',
+      title: '<Back-End Projects />',
       image: 'https://placehold.co/600x400', // Placeholder image URL
       description: 'This is the description for Box 1. It will be revealed on hover.'
     },
     {
-      title: 'Web Development',
+      title: '<Web Development />',
       image: 'https://placehold.co/600x400', // Placeholder image URL
       description: 'This is the description for Box 2. It will be revealed on hover.'
     },
     {
-      title: 'Home Lab',
+      title: '<Home Lab />',
       image: 'https://placehold.co/600x400', // Placeholder image URL
       description: 'This is the description for Box 3. It will be revealed on hover.'
     },
     {
-      title: 'Portfolio Site',
+      title: '<Portfolio Site />',
       image: 'https://placehold.co/600x400', // Placeholder image URL
       description: 'This is the description for Box 4. It will be revealed on hover.'
     },
     {
-      title: 'GitHub',
+      title: '<GitHub />',
       image: 'https://placehold.co/600x400', // Placeholder image URL
       description: 'This is the description for Box 5. It will be revealed on hover.'
     }
