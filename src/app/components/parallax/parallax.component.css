@@ -1,0 +1,23 @@
+:host {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+  
+ng-content {
+    display: block;
+}
+
+::ng-deep [child1], ::ng-deep [child2] {
+    width: 100%;
+    position: relative;
+}
+
+/* Disable parallax effect on mobile for better performance */
+@media (max-width: 768px) {
+    :host {
+        overflow: visible;
+    }
+}

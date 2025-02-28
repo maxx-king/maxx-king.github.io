@@ -1,0 +1,25 @@
+<div 
+  class="flex-display" 
+  role="region" 
+  aria-label="Image carousel"
+  tabindex="0"
+>
+  <div 
+    class="box" 
+    *ngFor="let box of boxes; let i = index" 
+    role="article"
+    [attr.aria-label]="box.title"
+  >
+    <div class="box-image">
+      <img 
+        [src]="box.image" 
+        [alt]="box.title"
+        loading="lazy"
+      >
+    </div>
+    <div class="box-content">
+      <h3 id="title-{{i}}">{{ box.title }}</h3>
+      <p id="desc-{{i}}">{{ box.description }}</p>
+    </div>
+  </div>
+</div> 

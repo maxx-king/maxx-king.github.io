@@ -1,0 +1,55 @@
+.carousel-container {
+    width: 100%;
+    position: relative;
+    padding: 2rem 0;
+}
+  
+.carousel {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+  
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+  
+.box {
+    scroll-snap-align: start;
+}
+
+.dot-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+  
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.dot.active {
+    background: white;
+}
+  
+.dot:hover {
+    background-color: #777; /* Hover effect */
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .carousel {
+        overflow-x: auto; /* Enable touch scrolling on mobile */
+    }
+    
+    .dot {
+        width: 8px; /* Smaller dots on mobile */
+        height: 8px;
+    }
+}

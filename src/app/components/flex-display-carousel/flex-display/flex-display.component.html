@@ -1,0 +1,11 @@
+<div class="flex-display">
+  <div class="box" *ngFor="let box of boxes">
+    <div class="box-image">
+      <img [src]="box.image" [alt]="box.title">
+    </div>
+    <div class="box-content">
+      <h3>{{ box.title }}</h3>
+      <p>{{ box.description }}</p>
+    </div>
+  </div>
+</div>

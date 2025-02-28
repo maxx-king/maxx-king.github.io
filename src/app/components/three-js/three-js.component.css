@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+#rendererContainer {
+  cursor: pointer;
+  width: 100% !important;
+  height: 80vh !important;
+  overflow: hidden;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  #rendererContainer {
+    height: 60vh !important; /* Smaller height on mobile */
+  }
+
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

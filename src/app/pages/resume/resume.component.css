@@ -1,0 +1,14 @@
+.resume-container {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--background-color);
+  margin-top: 60px;
+}
+@media (max-width: --mobile) {
+    .resume-container {
+      padding: 1rem;
+    }
+}

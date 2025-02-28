@@ -1,3 +1,15 @@
-<body>
-  <app-three-js></app-three-js>
-</body>>
+<div class="app-container">
+  <app-header></app-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer></app-footer>
+</div>
+
+<style>
+  :host {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+  }
+</style>  
