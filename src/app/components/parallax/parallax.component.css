@@ -1,11 +1,26 @@
 :host {
     display: block;
-    position: relative;
-    overflow: hidden;
     width: 100%;
-    min-height: 100vh;
+    overflow-x: hidden;
 }
-  
+
+.parallax-container {
+    width: 100%;
+}
+
+:host ::ng-deep [data-parallax="fixed"] {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+:host ::ng-deep [data-parallax="scroll"] {
+    position: relative;
+    z-index: 2;
+    padding-top: 80vh;
+}
+
 ng-content {
     display: block;
 }

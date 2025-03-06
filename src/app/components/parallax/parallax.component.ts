@@ -6,27 +6,34 @@ import { Component, ContentChild, AfterViewInit, HostListener, ElementRef } from
   styleUrls: ['./parallax.component.css']
 })
 export class ParallaxComponent implements AfterViewInit {
-  //@ts-ignore
-  @ContentChild('child1', { static: false }) child1: ElementRef;
-  //@ts-ignore
-  @ContentChild('child2', { static: false }) child2: ElementRef;
+  @ContentChild('child1', { static: false }) child1!: ElementRef;
+  @ContentChild('child2', { static: false }) child2!: ElementRef;
 
   constructor(private el: ElementRef) {}
 
   ngAfterViewInit(): void {
-    this.applyParallax();
+    if (this.child1?.nativeElement) {
+      this.child1.nativeElement.setAttribute('data-parallax', 'fixed');
+    }
+    
+    if (this.child2?.nativeElement) {
+      this.child2.nativeElement.setAttribute('data-parallax', 'scroll');
+    }
   }
 
   @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: Event): void {
-    this.applyParallax();
-  }
-
-  private applyParallax(): void {
+  onWindowScroll(): void {
     const scrollY = window.scrollY || window.pageYOffset;
-    const child2Element = this.child2.nativeElement;
-
-    // Adjust the parallax effect by changing the translateY value
-    child2Element.style.transform = `translateY(${scrollY * 0.5}px)`;
+    if (scrollY > window.innerHeight) {
+      if (this.child1?.nativeElement) {
+        this.child1.nativeElement.style.position = 'relative';
+        this.child1.nativeElement.style.transform = `translateY(${window.innerHeight}px)`;
+      }
+    } else {
+      if (this.child1?.nativeElement) {
+        this.child1.nativeElement.style.position = 'fixed';
+        this.child1.nativeElement.style.transform = 'none';
+      }
+    }
   }
 }
